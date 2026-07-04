@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+
+<div class="sidebar">
+<h1>InkLog</h1>
+<a href="index.html">ホーム</a>
+<a href="register.html">登録</a>
+<a href="history.html">戦績</a>
+<a href="analysis.html">分析</a>
+</div>
+
+<div class="main">
+<h2>登録</h2>
+
+<form id="battleForm">
+
+<input id="battleDate" type="datetime-local">
+
+<select id="battleType">
+<option>レギュラー</option>
+<option>バンカラ</option>
+<option>Xマッチ</option>
+</select>
+
+<select id="rule">
+<option>ナワバリ</option>
+<option>エリア</option>
+<option>ヤグラ</option>
+<option>ホコ</option>
+<option>アサリ</option>
+</select>
+
+<select id="stage">
+<option>ザトウ</option>
+<option>マテガイ</option>
+<option>ナメロウ</option>
+</select>
+
+<select id="weapon">
+<option>スシ</option>
+<option>わかば</option>
+<option>ローラー</option>
+</select>
+
+<select id="rank">
+<option>C</option><option>B</option><option>A</option><option>S</option><option>X</option>
+</select>
+
+<select id="result">
+<option value="win">勝利</option>
+<option value="lose">敗北</option>
+<option value="disconnect">切断</option>
+</select>
+
+<input id="kill" type="number" value="0">
+<input id="assist" type="number" value="0">
+<input id="death" type="number" value="0">
+<input id="special" type="number" value="0">
+<input id="paint" type="number" value="0">
+
+<textarea id="memo"></textarea>
+
+<button>保存</button>
+
+</form>
+
+</div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
